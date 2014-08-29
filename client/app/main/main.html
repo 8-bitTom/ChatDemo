@@ -1,0 +1,74 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<!-- <header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>'Allo, 'Allo!</h1>
+    <p class="lead">Kick-start your next web app with Angular Fullstack</p>
+    <img src="assets/images/yeoman.png" alt="I'm Yeoman">
+  </div>
+</header> -->
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Features:</h1>
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in awesomeThings">
+        <li><a href="#" tooltip="{{thing.info}}">{{thing.name}}<button type="button" class="close" ng-click="deleteThing(thing)">&times;</button></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <form class="thing-form">
+    <label>Syncs in realtime across clients</label>
+    <p class="input-group">
+      <input type="text" class="form-control" placeholder="Add a new thing here." ng-model="newThing">
+      <span class="input-group-btn">
+        <button type="submit" class="btn btn-primary" ng-click="addThing()">Add New</button>
+      </span>
+    </p>
+  </form>
+</div> -->
+
+<div class="container">
+  <div class="row">
+      <div class="col-lg-12">
+
+        <div class="panel panel-default">
+          
+          <div class="panel-heading">
+            Live Chat:
+          </div>
+
+          <div class="panel-body">
+            <div class="chatContainer" scroll-glue>
+              <div class="tableStyle">
+                <div class="chatRow" ng-repeat="msg in chatData">
+                  <div class="chatName">{{::msg.name}}:</div>
+                  <div class="chatBubble">{{::msg.info}}</div>
+                </div>  
+              </div>
+            </div>
+          </div>
+        
+          <div class="panel-footer">
+            <div class="row">
+              <div class="col-xs-11">
+                <textarea auto-grow type="text" class="form-control" placeholder="Say..." ng-model="chatMsg" ng-keypress="checkEnter($event)"></textarea>
+              </div>
+              <div class="col-xs-1">
+               <button type="submit" class="btn btn-primary" ng-click="sendMsg()"><span class="glyphicon glyphicon-comment"></span></button>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+      <p><a href="https://twitter.com/tyhenkel">@tyhenkel</a> |
+         <a href="https://github.com/DaftMonk/generator-angular-fullstack/issues?state=open">Issues</a></p>
+  </div>
+</footer>
